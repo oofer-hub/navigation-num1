@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!-- header -->
+        <div class="header">
+            <!-- 1. logo -->
+        <div>
+            <p class="logo">Startup 3</p>
+        </div>
+
+        <!-- 2. nav button -->
+        <ul class="nav-buttons">
+            <li>Home</li>
+            <li>Features</li>
+            <li>Blog</li>
+            <li>Shop</li>
+            <li>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </li>
+        </ul>
+
+        <!-- 3. sign in and sign out  -->
+        <div class="btn-container">
+            <button class="btn btn-secondary">Sign In</button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .header {
+        margin: 40px 115px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo {
+        color: var(--colors-heading, #1E0E62);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .nav-buttons {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn {
+        background-color: #482BE7;
+        border: none;
+        padding: 12px 24px;
+        color: white;
+        border-radius: 9999px;
+        cursor: pointer;
+    }
+    .btn-secondary {
+        background: white;
+        color: black;
+    }
+    .btn-primary{
+        background-color: #482BE7;
+        color: white;
+    }
+</style>
